@@ -21,7 +21,7 @@ const projects = [
 
 export default function Projects() {
   const { lang } = useLang()
-  const t = i18n[lang]
+  const t = i18n[lang as keyof typeof i18n]
   return (
     <section className="pt-32 max-w-6xl mx-auto px-6">
       <h1 className="text-4xl font-bold mb-12">Projects</h1>
