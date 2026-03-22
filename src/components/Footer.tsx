@@ -4,7 +4,7 @@ import { i18n } from "@/lib/i18n"
 import { useLang } from "@/lib/lang-context"
 export default function Footer() {
   const { lang } = useLang()
-  const t = i18n[lang];
+  const t = i18n[lang as keyof typeof i18n];
   return (
     <footer className="border-t border-white/10 py-10 mt-32">
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">

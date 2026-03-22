@@ -14,7 +14,7 @@ type Project = {
 
 export default function ProjectCard({ project }: { project: Project }) {
   const { lang } = useLang()
-  const t = i18n[lang]
+  const t = i18n[lang as keyof typeof i18n]
 
   return (
     <motion.div

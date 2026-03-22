@@ -11,7 +11,7 @@ export default function Navbar() {
   const { theme, setTheme } = useTheme()
   const { lang, setLang } = useLang()
   const pathname = usePathname()
-  const t = i18n[lang]
+  const t = i18n[lang as keyof typeof i18n]
   const [isClient, setIsClient] = useState(false)
 
   const navLinks = [

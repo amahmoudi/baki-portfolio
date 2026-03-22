@@ -5,7 +5,7 @@ import { i18n } from "@/lib/i18n"
 
 export default function Services() {
  const { lang } = useLang();
-  const t = i18n[lang];
+  const t = i18n[lang as keyof typeof i18n];
 
   const services = [
     {

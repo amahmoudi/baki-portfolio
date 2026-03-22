@@ -5,7 +5,7 @@ import { useLang } from "@/lib/lang-context"
 
 export default function Contact() {
   const { lang } = useLang()
-  const t = i18n[lang];
+  const t = i18n[lang as keyof typeof i18n];
   return (
     <section className="pt-32 pb-40 px-6 text-center max-w-3xl mx-auto">
       <h1 className="text-4xl font-bold mb-6">

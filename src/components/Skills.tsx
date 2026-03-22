@@ -11,7 +11,7 @@ import { i18n } from "@/lib/i18n"
 import { useLang } from "@/lib/lang-context"
 export default function Skills() {
   const { lang } = useLang();
-  const t = i18n[lang];
+  const t = i18n[lang as keyof typeof i18n];
   return (
     <section className="py-32 text-center">
       <h2 className="text-4xl font-bold mb-12">{t.skills}</h2>

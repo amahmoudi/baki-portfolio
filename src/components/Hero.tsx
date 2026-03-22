@@ -6,7 +6,7 @@ import Link from "next/link"
 
 export default function Hero() {
   const { lang } = useLang();
-  const t = i18n[lang];
+  const t = i18n[lang as keyof typeof i18n];
 
   return (
     <section className="min-h-screen flex items-center justify-center px-6 text-center">
