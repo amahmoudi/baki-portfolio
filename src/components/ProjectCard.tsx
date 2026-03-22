@@ -22,11 +22,11 @@ export default function ProjectCard({ project }: { project: Project }) {
       className="bg-white/5 border border-white/10 rounded-xl p-6 backdrop-blur hover:border-accent transition"
     >
       <h3 className="text-xl font-semibold text-accent">
-        {t[project.title]}
+        {t[project.title as keyof typeof t]}
       </h3>
 
       <p className="mt-3 text-sm opacity-80">
-        {t[project.description]}
+        {t[project.description as keyof typeof t]}
       </p>
 
       <div className="flex flex-wrap gap-2 mt-4">

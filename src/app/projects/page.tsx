@@ -28,7 +28,7 @@ export default function Projects() {
 
       <div className="grid md:grid-cols-2 gap-8">
         {projects.map((p) => (
-          <ProjectCard key={t[p.title]} project={p} />
+          <ProjectCard key={t[p.title as keyof typeof t]} project={p} />
         ))}
       </div>
     </section>
