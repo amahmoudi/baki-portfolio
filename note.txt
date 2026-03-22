@@ -1,0 +1,5 @@
+npx create-next-app@latest baki-portfolio --app --typescript --tailwind
+cd baki-portfolio
+npm install framer-motion next-themes lucide-react
+
+
